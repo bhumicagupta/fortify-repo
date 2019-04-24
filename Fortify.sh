@@ -6,6 +6,3 @@ result=${var:11:36}
 echo $result
 
 curl http://10.210.54.246:8083/webinspect/scanner/scans/$result?action=WaitForStatusChange
-cd /godata/fortify-reports
-curl -O http://10.210.54.246:8083/webinspect/scanner/scans/$result.fpr
-curl -O http://10.210.54.246:8083/webinspect/scanner/scans/$result.scan
