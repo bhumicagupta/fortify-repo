@@ -9,3 +9,4 @@ curl http://10.210.54.246:8083/webinspect/scanner/scans/$result?action=WaitForSt
 cd /godata/fortify-reports
 curl -O http://10.210.54.246:8083/webinspect/scanner/scans/$result.fpr
 curl -O http://10.210.54.246:8083/webinspect/scanner/scans/$result.scan
+curl -O http://10.210.54.246:8083/webinspect/scanner/reports/$result.html?reportType=issue&reportName=report&isCustom=false
