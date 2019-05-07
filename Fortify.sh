@@ -10,3 +10,4 @@ cd /godata/fortify-reports
 curl -O http://10.210.54.246:8083/webinspect/scanner/scans/$result.fpr
 curl -O http://10.210.54.246:8083/webinspect/scanner/scans/$result.scan
 curl -O http://10.210.54.246:8083/webinspect/scanner/scans/$result.xml?detailType=Vulnerability
+cp $result.xml?detailType=Vulnerability scan_result.xml
